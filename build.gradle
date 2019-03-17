@@ -3,7 +3,10 @@ apply plugin: 'idea'
 
 version = '1.0'
 repositories {
-    mavenCentral()
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/groups/public/'
+    }
+//    mavenCentral()
 }
 
 jar {
